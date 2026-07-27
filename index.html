@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="light" data-accent="warm">
+  <main class="page">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Student Profile Builder</p>
+        <h1>Edit your details</h1>
+      </div>
+      <div class="topbar-actions">
+        <button type="button" id="theme-btn" class="theme-toggle">🌙 Dark Mode</button>
+        <button type="button" id="change-theme-btn" class="theme-toggle alt">🎨 Change Theme</button>
+      </div>
+    </header>
+
+    <section class="content-grid">
+      <div class="left-panel">
+        <form id="profile-form" class="profile-form">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" />
+          </div>
+
+          <div class="input-group">
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="1" max="100" placeholder="Enter your age" />
+          </div>
+
+          <div class="input-group">
+            <label for="subject">Favourite Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Enter your favourite subject" />
+          </div>
+
+          <div class="input-group">
+            <label for="color">Favourite Color</label>
+            <input id="color" name="color" type="text" placeholder="Enter your favourite color" />
+          </div>
+        </form>
+
+        <div class="button-row">
+          <button type="button" id="create-btn" class="btn btn-primary">Create Profile</button>
+          <button type="button" id="hide-btn" class="btn btn-secondary">Hide Profile</button>
+          <button type="button" id="reset-btn" class="btn btn-tertiary">Reset</button>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div id="profile-card" class="profile-card">
+          <div class="avatar-wrap">
+            <img src="images/profile_icon.jpg" alt="Student avatar" class="profile-icon" />
+          </div>
+          <div class="card-body">
+            <p class="card-label">Student Profile</p>
+            <h2 id="name-heading">Student Name</h2>
+            <ul class="info-list">
+              <li><span>Name</span><strong id="name-output">—</strong></li>
+              <li><span>Age</span><strong id="age-output">—</strong></li>
+              <li><span>Favourite Subject</span><strong id="subject-output">—</strong></li>
+              <li><span>Favourite Color</span><strong id="color-output">—</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-note">Made by: Fareha Asfar Ullah</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
