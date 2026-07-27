@@ -21,6 +21,6 @@ What you can add:
 - Awards or projects you are proud of.
 
 Screenshot:
-- `images/website screenshot.png`
+- `images/Website-screenshot.png`
 
 This is a simple school-style project for a student profile card.
