@@ -20,4 +20,7 @@ What you can add:
 - Social links or clubs you are part of.
 - Awards or projects you are proud of.
 
+Screenshot:
+- `images/website screenshot.png`
+
 This is a simple school-style project for a student profile card.
